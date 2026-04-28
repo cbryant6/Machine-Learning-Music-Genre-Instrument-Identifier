@@ -107,7 +107,7 @@ def featurize_path(path):
     return wav_to_logmel(path)  # No additional normalization
 ```
 
-Test accuracy restored to ~0.61.
+Test accuracy restored to ~0.71.
 
 ### Class-Level Performance
 
@@ -158,8 +158,8 @@ Input (log-mel spectrogram, shape: [T, 64, 1])
 
 | Model | Task | Val Accuracy | Test Accuracy |
 |---|---|---|---|
-| CNN v4 (genre) | 10-class genre | — | ~0.63–0.64 |
-| CNN v4 (instrument) | 4-class instrument | ~0.71 | ~0.61 |
+| CNN v4 (genre) | 10-class genre | — | ~0.77 |
+| CNN v4 (instrument) | 4-class instrument | ~0.70 | ~0.71 |
 
 Both models are limited by:
 - Small dataset size (GTZAN: ~1000 tracks; instrument dataset similarly small)
@@ -175,6 +175,7 @@ A key lesson from this project:
 The genre model's best run (0.77 accuracy) could **not** be reproduced under controlled reconstruction. Root causes:
 - Google Drive was not mounted before training — artifacts were lost
 - Model weights, logs, and dataset splits were not preserved
+- Human Error caused problems, but were invaluable learninig experience
 
 Later reruns with identical seeds produced stable but lower results (~0.63–0.64).
 

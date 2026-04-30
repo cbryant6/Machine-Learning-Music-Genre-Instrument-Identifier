@@ -173,9 +173,9 @@ Both models are limited by:
 A key lesson from this project:
 
 The genre model's best run (0.77 accuracy) could **not** be reproduced under controlled reconstruction. Root causes:
-- Google Drive was not mounted before training — artifacts were lost
+- Google Drive complication — artifacts were lost
 - Model weights, logs, and dataset splits were not preserved
-- Human Error caused problems, but were invaluable learninig experience
+- Human Error caused problems, but were an invaluable learning experience
 
 Later reruns with identical seeds produced stable but lower results (~0.63–0.64).
 

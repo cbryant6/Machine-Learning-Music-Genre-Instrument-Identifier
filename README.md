@@ -8,6 +8,9 @@ Coleman Bryant
 
 A unified music analysis system with two CNN pipelines: **genre classification** (10-class GTZAN) and **dominant instrument identification** (4-class Kaggle). Both use log-mel spectrograms as image-like inputs and compare iterative CNN revisions against non-neural baselines.
 
+<img width="1280" height="720" alt="TECHIN513 ML Music Identifier" src="https://github.com/user-attachments/assets/f57e3c9c-d105-4691-95cb-53b9b52b453c" />
+
+
 ## Results
 
 | Task | Baseline | Best CNN | Accuracy |

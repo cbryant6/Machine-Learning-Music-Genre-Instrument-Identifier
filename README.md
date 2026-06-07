@@ -1,6 +1,6 @@
 # Music Classification with Signal Processing and CNNs
 
-**TECHIN 513 — Digital Signal Processing**  
+**TECHIN 513 — Data Signal Processing**  
 University of Washington · Master of Science in Technology Innovation  
 Coleman Bryant
 
